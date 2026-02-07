@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+  "settings": {
+    "documentationRules": {
+      "companyName": "Nima Aran",
+      "copyrightText": "------------------------------------------------------------------------------------------------\r\nAll rights reserved. This project and this file is published under the Apache License 2. So, Any\r\nuse of this project must comply with the terms and policies described in the project’s `LICENSE`\r\nfile. For more information, please visit the project repository on GitHub or contact with owner.\r\n------------------------------------------------------------------------------------------------",
+      "documentationCulture": "en-US",
+      "xmlHeader": false,
+      "documentInterfaces": true,
+      "documentPrivateFields": false,
+      "documentExposedElements": true,
+      "documentPrivateElements": false,
+      "documentInternalElements": false,
+      "fileNamingConvention": "stylecop"
+    },
+    "indentation": {
+      "indentationSize": 4,
+      "tabSize": 4,
+      "useTabs": false
+    },
+    "layoutRules": {
+      "allowConsecutiveUsings": true,
+      "allowDoWhileOnClosingBrace": false,
+      "newlineAtEndOfFile": "require"
+    },
+    "maintainabilityRules": {
+      "topLevelTypes": [ ]
+    },
+    "namingRules": {
+      "allowCommonHungarianPrefixes": true,
+      "allowedHungarianPrefixes": [],
+      "allowedNamespaceComponents": [],
+      "includeInferredTupleElementNames": false,
+      "tupleElementNameCasing": "PascalCase"
+    },
+    "orderingRules": {
+      "blankLinesBetweenUsingGroups": "omit",
+      "elementOrder": [ "kind", "accessibility", "readonly", "constant", "static" ],
+      "systemUsingDirectivesFirst": false,
+      "usingDirectivesPlacement": "outsideNamespace"
+    },
+    "readabilityRules": {
+      "allowBuiltInTypeAliases": false
+    },
+    "spacingRules": {
+    }
+  }
+}

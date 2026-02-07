@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project>
+	
+  <PropertyGroup>
+  	<TargetFramework>net10.0</TargetFramework>
+  	<ImplicitUsings>enable</ImplicitUsings>
+  	<Nullable>enable</Nullable>
+  	<Authors>Nima Aran</Authors>
+  	<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  	<PackageOutputPath>$(SolutionDir).local\packages</PackageOutputPath>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/nimaaran/Fx.Extensions</RepositoryUrl>
+	<PackageProjectUrl>https://github.com/nimaaran/Fx.Extensions</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  	<GenerateDocumentationFile>true</GenerateDocumentationFile>
+  	<SonarAnalyzerVersion>10.6.0.109712</SonarAnalyzerVersion>
+  	<StyleCopVersion>1.2.0-beta.556</StyleCopVersion>
+  </PropertyGroup>
+	
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  	<CodeAnalysisRuleSet>../../Common.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  
+  <ItemGroup>
+  	<PackageReference Update="SonarAnalyzer.CSharp" Version="$(SonarAnalyzerVersion)">
+  	  <PrivateAssets>all</PrivateAssets>
+  	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+  	</PackageReference>
+  	<PackageReference Include="StyleCop.Analyzers" Version="$(StyleCopVersion)">
+  	  <PrivateAssets>all</PrivateAssets>
+  	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+  	</PackageReference>
+  </ItemGroup>
+	
+  <ItemGroup>
+  	<AdditionalFiles Include="../../stylecop.json">
+  	  <Link>stylecop.json</Link>
+  	</AdditionalFiles>
+  </ItemGroup>
+	
+  <PropertyGroup>
+  	<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+</Project>
